@@ -12,4 +12,5 @@ const waitingForSomething = (ms) => {
 
 export default function SlowComponent() {
     waitingForSomething(1000)
+    return <div>Slow Component</div>
 }

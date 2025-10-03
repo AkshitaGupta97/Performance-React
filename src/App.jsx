@@ -28,7 +28,6 @@ function App() {
             */}
 
           {/* main content of the app */}
-          <h1>Performance Optimization in React</h1>
           {/* <modal/> */}
           {/* it will be opened when button is clicked */}
           {/* <Modal/> */}

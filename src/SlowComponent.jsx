@@ -10,7 +10,15 @@ const waitingForSomething = (ms) => {
     }
 }
 
-export default function SlowComponent() {
-    waitingForSomething(1000)
+export default function SlowComponent({time, custom}) {
+    waitingForSomething(time[0]);
+    if(custom) custom();
     return <div>Slow Component</div>
 }
+
+/* before memoizing
+export default function SlowComponent() {
+    waitingForSomething(1000);
+    return <div>Slow Component</div>
+}
+ */
